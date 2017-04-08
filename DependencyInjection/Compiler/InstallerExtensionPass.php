@@ -19,13 +19,13 @@ class InstallerExtensionPass implements CompilerPassInterface
     public function process(ContainerBuilder $container)
     {
         // always first check if the primary service is defined
-        if (!$container->has('adevis_installer.provider.installer_provider')) {
+        if (!$container->has('miky_installer.provider.installer_provider')) {
             return;
         }
-        $definition = $container->findDefinition('adevis_installer.provider.installer_provider');
+        $definition = $container->findDefinition('miky_installer.provider.installer_provider');
 
         // find all service IDs with the app.mail_transport tag
-        $taggedServices = $container->findTaggedServiceIds('adevis.installer');
+        $taggedServices = $container->findTaggedServiceIds('miky.installer');
 
 
         foreach ($taggedServices as $id => $tags) {

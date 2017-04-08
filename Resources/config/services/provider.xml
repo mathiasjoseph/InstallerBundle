@@ -6,6 +6,6 @@
 
     <services>
         <service class="Miky\Bundle\InstallerBundle\Provider\InstallerProvider"
-                 id="adevis_installer.provider.installer_provider"/>
+                 id="miky_installer.provider.installer_provider"/>
     </services>
 </container>
