@@ -5,12 +5,8 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <imports>
-        <import resource="services/provider.xml"/>
+        <import resource="services/command.xml"/>
+        <import resource="services/doctrine.xml"/>
     </imports>
-    <services>
-        <service id="miky_bundle_installer.command.installer_command" class="Miky\Bundle\InstallerBundle\Command\InstallerCommand">
-            <argument id="miky_installer.provider.installer_provider" type="service"/>
-            <tag name="console.command"/>
-        </service>
-    </services>
+
 </container>
