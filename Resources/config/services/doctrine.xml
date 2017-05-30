@@ -4,7 +4,7 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 <parameters>
-    <parameter key="miky_installer.model.installation.class">Miky\Bundle\UserBundle\Entity\Installation</parameter>
+    <parameter key="miky_installer.model.installation.class">Miky\Bundle\InstallerBundle\Entity\Installation</parameter>
 </parameters>
 
 </container>

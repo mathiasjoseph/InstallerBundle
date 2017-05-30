@@ -5,7 +5,7 @@ namespace Miky\Bundle\InstallerBundle\Entity;
 /**
  * Installation
  */
-class Installation
+class Installation extends \Miky\Bundle\InstallerBundle\Model\Installation
 {
     /**
      * @var int

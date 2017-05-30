@@ -10,8 +10,9 @@ namespace Miky\Bundle\InstallerBundle\Event;
 
 
 use Miky\Bundle\InstallerBundle\Model\Installation;
+use Symfony\Component\EventDispatcher\Event;
 
-class UpdateEvent
+class UpdateEvent extends Event
 {
     /**
      * @var Installation
